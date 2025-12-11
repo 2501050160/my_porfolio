@@ -3,6 +3,7 @@ import siteData from '../data/siteData.json';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Tag, Filter } from 'lucide-react';
 import { clsx } from 'clsx';
+import { ProjectStats } from './ProjectStats';
 
 type Project = typeof siteData.projects.keyProjects[0];
 
@@ -10,7 +11,7 @@ export const Projects: React.FC = () => {
   const [filter, setFilter] = useState<'all' | 'iot' | 'fullstack' | 'web'>('all');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const { keyProjects } = siteData.projects;
+  const { keyProjects, stats } = siteData.projects;
 
   const filteredProjects = keyProjects.filter(
     (p) => filter === 'all' || p.category === filter
@@ -19,26 +20,45 @@ export const Projects: React.FC = () => {
   return (
     <div className="pt-24 pb-16 min-h-screen bg-gray-50 dark:bg-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Header Section */}
         <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Featured Projects
-            </h2>
-            <p className="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">
-                A selection of my technical projects ranging from IoT embedded systems to full-stack web applications.
-            </p>
+            <motion.h2 
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 mb-4"
+            >
+              Project Portfolio
+            </motion.h2>
+            <motion.p 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400"
+            >
+                Exploring the intersection of embedded systems, real-time data, and modern web technologies.
+            </motion.p>
         </div>
 
+        {/* Dynamic Stats Section */}
+        <ProjectStats 
+            displayedCount={filteredProjects.length}
+            iotCount={stats.iotTotal}
+            majorCount={stats.major}
+            miniCount={stats.mini}
+        />
+
         {/* Filter Tabs */}
-        <div className="flex justify-center flex-wrap gap-3 mb-12">
+        <div className="flex justify-center flex-wrap gap-3 mb-10">
           {['all', 'iot', 'fullstack', 'web'].map((cat) => (
             <button
               key={cat}
               onClick={() => setFilter(cat as any)}
               className={clsx(
-                "px-5 py-2.5 rounded-full text-sm font-semibold capitalize transition-all duration-300 flex items-center gap-2",
+                "px-6 py-2.5 rounded-full text-sm font-bold capitalize transition-all duration-300 flex items-center gap-2 border",
                 filter === cat
-                  ? "bg-primary-600 text-white shadow-lg shadow-primary-500/30 transform scale-105"
-                  : "bg-white dark:bg-slate-800 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:shadow-md border border-gray-200 dark:border-slate-700"
+                  ? "bg-primary-600 border-primary-600 text-white shadow-lg shadow-primary-500/30 transform scale-105"
+                  : "bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-800 text-gray-600 dark:text-gray-400 hover:border-primary-400 dark:hover:border-primary-600 hover:text-primary-600 dark:hover:text-primary-400"
               )}
             >
               {cat === 'all' && <Filter size={14} />}
