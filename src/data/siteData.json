@@ -83,79 +83,176 @@
     "keyProjects": [
       {
         "id": "p1",
-        "title": "Smart DriveMate - IoT Vehicle Tracking & Security System",
+        "title": "Smart DriveMate - IoT Vehicle Tracking",
         "short": "Real-time GPS tracking, geo-fencing, speed alerts, remote engine lock and theft prevention.",
         "description": "Real-time GPS tracking with interactive map, geo-fencing with instant notifications, speed limit alerts, remote engine lock/unlock, motion-based theft detection, mobile & web dashboard.",
-        "technologies": ["React.js", "Django", "ESP32", "GPS NEO-6M", "GSM SIM800L", "MQTT", "WebSocket"],
+        "technologies": ["React.js", "Django", "ESP32", "GPS NEO-6M", "GSM SIM800L"],
         "category": "iot",
-        "features": [
-          "Live location tracking on map", "Geo-fencing with alerts", "Remote engine control", "Motion detection & emergency alerts"
-        ],
+        "features": ["Live location tracking", "Geo-fencing alerts", "Remote engine control", "Motion detection"],
         "highlighted": true
       },
       {
         "id": "p2",
-        "title": "Real-Time Attendance & Student Management System",
+        "title": "Real-Time Attendance System",
         "short": "Facial recognition based attendance, analytics, role-based dashboard and automated notifications.",
         "description": "Full-stack real-time attendance system with facial recognition, analytics dashboards, role-based access and SMS/email notifications.",
-        "technologies": ["React.js", "Django", "PostgreSQL", "Facial Recognition"],
+        "technologies": ["React.js", "Django", "PostgreSQL", "Face Recog"],
         "category": "fullstack",
         "features": ["Facial recognition", "Real-time analytics", "Automated notifications"],
         "highlighted": true
       },
       {
         "id": "p3",
-        "title": "Transport Management System with Route Optimization",
+        "title": "Transport Management System",
         "short": "Route optimization using Google Maps, live traffic integration and driver analytics.",
         "description": "Dynamic route optimization with Google Maps API, live traffic data, driver performance analytics and fuel consumption tracking.",
         "technologies": ["React.js", "Google Maps API", "Django", "Leaflet.js"],
         "category": "fullstack",
         "features": ["Route optimization", "Live traffic ETAs", "Driver analytics"],
         "highlighted": true
+      },
+      {
+        "id": "p4",
+        "title": "Smart Home Automation v4.0",
+        "short": "Voice controlled home automation with energy analytics and mobile app integration.",
+        "description": "Comprehensive home automation system supporting voice commands via Alexa/Google Assistant, real-time energy usage monitoring, and remote control via mobile app.",
+        "technologies": ["ESP8266", "IoT Cloud", "Arduino", "C++"],
+        "category": "iot",
+        "features": ["Voice Control", "Energy Analytics", "Mobile App"],
+        "highlighted": false
+      },
+      {
+        "id": "p5",
+        "title": "Industrial Monitoring System",
+        "short": "IoT based industrial machine health monitoring and predictive maintenance.",
+        "description": "Monitors vibration, temperature, and current consumption of industrial motors to predict failures before they happen using edge ML.",
+        "technologies": ["Raspberry Pi", "Python", "MQTT", "AWS IoT"],
+        "category": "iot",
+        "features": ["Vibration Analysis", "Predictive Maintenance", "Cloud Logging"],
+        "highlighted": false
+      },
+      {
+        "id": "p6",
+        "title": "Precision Agriculture System",
+        "short": "Automated irrigation and soil health monitoring for smart farming.",
+        "description": "Uses soil moisture sensors and weather data to automate irrigation, saving water and improving crop yield.",
+        "technologies": ["Arduino", "LoRaWAN", "Sensors", "Solar Power"],
+        "category": "iot",
+        "features": ["Auto Irrigation", "Soil Analysis", "Remote Monitoring"],
+        "highlighted": false
+      },
+      {
+        "id": "p7",
+        "title": "Smart City Solutions Suite",
+        "short": "Integrated system for smart waste management and street light control.",
+        "description": "Optimizes waste collection routes based on bin fill levels and manages street lights based on ambient light and presence.",
+        "technologies": ["ESP32", "LoRa", "Google Maps API", "Node.js"],
+        "category": "iot",
+        "features": ["Route Optimization", "Energy Saving", "Central Dashboard"],
+        "highlighted": false
+      },
+       {
+        "id": "p8",
+        "title": "E-commerce Platform",
+        "short": "Full featured multi-vendor e-commerce platform with payment gateway.",
+        "description": "A scalable e-commerce application with user authentication, product search, cart functionality, and Stripe integration.",
+        "technologies": ["MERN Stack", "Redux", "Stripe", "MongoDB"],
+        "category": "web",
+        "features": ["Secure Payments", "Admin Dashboard", "Order Tracking"],
+        "highlighted": false
+      },
+      {
+        "id": "p9",
+        "title": "Inventory Management System",
+        "short": "Real-time inventory tracking for warehouses with barcode support.",
+        "description": "Web-based inventory system allowing check-in/check-out of stock via barcode scanning and reporting.",
+        "technologies": ["React", "Firebase", "Bootstrap"],
+        "category": "web",
+        "features": ["Barcode Scanning", "Low Stock Alerts", "PDF Reports"],
+        "highlighted": false
+      },
+       {
+        "id": "p10",
+        "title": "Hospital Management Portal",
+        "short": "Patient records and appointment scheduling system.",
+        "description": "Digitalizes patient health records and streamlines appointment booking for hospitals.",
+        "technologies": ["Django", "PostgreSQL", "HTML/CSS"],
+        "category": "web",
+        "features": ["Appointment Booking", "EMR", "Doctor Portal"],
+        "highlighted": false
+      },
+      {
+        "id": "p11",
+        "title": "Environmental Monitoring",
+        "short": "Air quality monitoring network for urban areas.",
+        "description": "Deploys a network of sensors to map air quality (AQI) across the city in real-time.",
+        "technologies": ["ESP8266", "Air Quality Sensors", "Grafana", "InfluxDB"],
+        "category": "iot",
+        "features": ["Real-time AQI", "Historical Data", "Heatmaps"],
+        "highlighted": false
+      },
+      {
+        "id": "p12",
+        "title": "Healthcare Monitoring Device",
+        "short": "Wearable device for tracking elderly patient vitals.",
+        "description": "Monitors heart rate, SpO2 and fall detection, alerting caregivers in emergencies.",
+        "technologies": ["Arduino Nano", "Pulse Sensor", "Bluetooth"],
+        "category": "iot",
+        "features": ["Fall Detection", "Vitals Monitoring", "SOS Alert"],
+        "highlighted": false
       }
     ],
     "categories": {
-      "major": [
-        "Smart Home Automation v4.0",
-        "Industrial Monitoring System",
-        "Precision Agriculture System",
-        "Smart City Solutions Suite",
-        "Healthcare Monitoring Devices",
-        "Environmental Monitoring Network"
-      ],
-      "mini": [
-        "Automated Lighting Control",
-        "Weather Station Network",
-        "Smart Irrigation Controllers",
-        "Home Security Modules",
-        "Energy Monitoring Systems"
-      ],
-      "web": [
-        "E-commerce Platform",
-        "Inventory Management System",
-        "Hospital Management Portal",
-        "Learning Management System",
-        "Social Media Dashboard"
-      ]
+      "major": [],
+      "mini": [],
+      "web": []
     }
   },
   "certificates": {
     "firstPrize": [
-      { "id": 1, "title": "Best Paper Award", "event": "Stepcone 2k25", "image": "/images/certificates/stepcone.jpg" },
-      { "id": 2, "title": "First Prize, Paper Presentation", "event": "ASTHRA 3.0", "image": "/images/certificates/asthra.jpg" }
+      { "id": 101, "title": "Best Paper Award", "event": "Stepcone 2k25", "image": "/images/certificates/stepcone.jpg" },
+      { "id": 102, "title": "First Prize, Paper Presentation", "event": "ASTHRA 3.0", "image": "/images/certificates/asthra.jpg" },
+      { "id": 103, "title": "Tech Innovation Award", "event": "Innovate 2024", "image": "/images/certificates/innovate.jpg" },
+      { "id": 104, "title": "Best IoT Project", "event": "Technozion 2024", "image": "/images/certificates/techno.jpg" },
+      { "id": 105, "title": "Hackathon Winner", "event": "Smart India Hackathon Internal", "image": "/images/certificates/sih.jpg" },
+      { "id": 106, "title": "Code Wizard 2023", "event": "College Fest", "image": "/images/certificates/wizard.jpg" },
+      { "id": 107, "title": "Robotics Champion", "event": "RoboFest 2023", "image": "/images/certificates/robo.jpg" },
+      { "id": 108, "title": "Design Thinking Award", "event": "Design Summit", "image": "/images/certificates/design.jpg" },
+      { "id": 109, "title": "Best Prototype", "event": "Maker Faire Local", "image": "/images/certificates/maker.jpg" },
+      { "id": 110, "title": "Paper Presentation Winner", "event": "MechTrix 2023", "image": "/images/certificates/mechtrix.jpg" },
+      { "id": 111, "title": "Ideathon First Place", "event": "IdeaStorm", "image": "/images/certificates/ideastorm.jpg" },
+      { "id": 112, "title": "Project Expo Winner", "event": "Vignan Quest", "image": "/images/certificates/quest.jpg" }
     ],
     "secondPrize": [
-      { "id": 6, "title": "Second Prize, Paper Presentation", "event": "Synergy 2k25", "image": "/images/certificates/synergy.jpg" }
+      { "id": 201, "title": "Second Prize, Paper Presentation", "event": "Synergy 2k25", "image": "/images/certificates/synergy.jpg" },
+      { "id": 202, "title": "Circuit Debugging Runner-up", "event": "ElectroBuzz", "image": "/images/certificates/debug.jpg" },
+      { "id": 203, "title": "Web Design Contest", "event": "WebWeaver", "image": "/images/certificates/web.jpg" },
+      { "id": 204, "title": "Technical Quiz Silver", "event": "QuizMasters", "image": "/images/certificates/quiz.jpg" },
+      { "id": 205, "title": "CAD Modeling Runner-up", "event": "DesignWarz", "image": "/images/certificates/cad.jpg" },
+      { "id": 206, "title": "Project Expo Runner-up", "event": "TechExpo 2023", "image": "/images/certificates/expo.jpg" },
+      { "id": 207, "title": "Paper Presentation 2nd", "event": "Ignite 2k23", "image": "/images/certificates/ignite.jpg" },
+      { "id": 208, "title": "Poster Presentation Silver", "event": "Science Day", "image": "/images/certificates/science.jpg" }
     ],
     "thirdPrize": [
-      { "id": 10, "title": "Third Prize, Poster Presentation", "event": "Saarang 2K25", "image": "/images/certificates/poster.jpg" }
+      { "id": 301, "title": "Third Prize, Poster Presentation", "event": "Saarang 2K25", "image": "/images/certificates/poster.jpg" },
+      { "id": 302, "title": "Coding Contest 3rd", "event": "CodeArena", "image": "/images/certificates/arena.jpg" },
+      { "id": 303, "title": "IoT Challenge Bronze", "event": "Connect 2024", "image": "/images/certificates/connect.jpg" },
+      { "id": 304, "title": "Debate Competition", "event": "SpeakUp", "image": "/images/certificates/speak.jpg" },
+      { "id": 305, "title": "Model Making 3rd", "event": "CreateIt", "image": "/images/certificates/create.jpg" },
+      { "id": 306, "title": "Tech Hunt Bronze", "event": "Treasure 2.0", "image": "/images/certificates/hunt.jpg" }
     ],
     "professional": [
-      { "id": 13, "title": "Full-Stack Java Development", "image": "/images/certificates/java.jpg" },
-      { "id": 14, "title": "Advanced Python & Django", "image": "/images/certificates/python.jpg" },
-      { "id": 15, "title": "React Development Specialization", "image": "/images/certificates/react.jpg" }
+      { "id": 401, "title": "Full-Stack Java Development", "image": "/images/certificates/java.jpg" },
+      { "id": 402, "title": "Advanced Python & Django", "image": "/images/certificates/python.jpg" },
+      { "id": 403, "title": "React Development Specialization", "image": "/images/certificates/react.jpg" },
+      { "id": 404, "title": "AWS Certified Cloud Practitioner", "image": "/images/certificates/aws.jpg" },
+      { "id": 405, "title": "IoT Fundamentals", "image": "/images/certificates/iot_fund.jpg" },
+      { "id": 406, "title": "Embedded Systems Design", "image": "/images/certificates/embedded.jpg" },
+      { "id": 407, "title": "Machine Learning for IoT", "image": "/images/certificates/ml_iot.jpg" },
+      { "id": 408, "title": "Cybersecurity Basics", "image": "/images/certificates/cyber.jpg" },
+      { "id": 409, "title": "Agile Methodologies", "image": "/images/certificates/agile.jpg" }
     ],
-    "notes": "Place certificate images in /public/images/certificates/. If images are missing, the site should show a placeholder SVG."
+    "notes": "Place certificate images in /public/images/certificates/. The app uses placeholders if images are missing."
   },
   "contact": {
     "email": "saipraveendasari51@gmail.com",

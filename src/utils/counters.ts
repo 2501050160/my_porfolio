@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 
-export const useCounter = (end: number, duration: number = 2000) => {
-  const [count, setCount] = useState(0);
+export const useCounter = (end: number, duration: number = 2000, start: number = 0) => {
+  const [count, setCount] = useState(start);
   const elementRef = useRef<HTMLDivElement>(null);
   const hasAnimated = useRef(false);
 
@@ -10,20 +10,26 @@ export const useCounter = (end: number, duration: number = 2000) => {
       (entries) => {
         if (entries[0].isIntersecting && !hasAnimated.current) {
           hasAnimated.current = true;
-          let start = 0;
-          const increment = end / (duration / 16); // 60fps
           
-          const timer = setInterval(() => {
-            start += increment;
-            if (start >= end) {
-              setCount(end);
-              clearInterval(timer);
-            } else {
-              setCount(Math.ceil(start));
+          let startTime: number | null = null;
+          
+          const step = (timestamp: number) => {
+            if (!startTime) startTime = timestamp;
+            const progress = Math.min((timestamp - startTime) / duration, 1);
+            
+            // Ease out quart
+            const easeProgress = 1 - Math.pow(1 - progress, 4);
+            
+            setCount(Math.floor(easeProgress * (end - start) + start));
+            
+            if (progress < 1) {
+              window.requestAnimationFrame(step);
             }
-          }, 16);
+          };
           
-          return () => clearInterval(timer);
+          window.requestAnimationFrame(step);
+          
+          observer.disconnect();
         }
       },
       { threshold: 0.2 }
@@ -34,7 +40,7 @@ export const useCounter = (end: number, duration: number = 2000) => {
     }
 
     return () => observer.disconnect();
-  }, [end, duration]);
+  }, [end, duration, start]);
 
   return { count, elementRef };
 };
