@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import siteData from '../data/siteData.json';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ExternalLink, Tag } from 'lucide-react';
+import { X, Tag } from 'lucide-react';
 import { clsx } from 'clsx';
 
 type Project = typeof siteData.projects.keyProjects[0];

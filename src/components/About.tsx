@@ -1,7 +1,7 @@
 import React from 'react';
 import siteData from '../data/siteData.json';
 import { useCounter } from '../utils/counters';
-import { Cpu, Globe, Tool, Briefcase, GraduationCap, Award } from 'lucide-react';
+import { Cpu, Globe, Wrench, Briefcase, GraduationCap, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const SkillCard = ({ title, skills, icon: Icon }: { title: string; skills: string[]; icon: any }) => (
@@ -81,7 +81,7 @@ export const About: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <SkillCard title="IoT & Embedded" skills={about.skills.iot} icon={Cpu} />
               <SkillCard title="Web Development" skills={about.skills.web} icon={Globe} />
-              <SkillCard title="Tools & Design" skills={about.skills.tools} icon={Tool} />
+              <SkillCard title="Tools & Design" skills={about.skills.tools} icon={Wrench} />
             </div>
 
             <div className="glass-card p-8 rounded-xl mt-8">

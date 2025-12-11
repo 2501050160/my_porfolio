@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import siteData from '../data/siteData.json';
 import { useCounter } from '../utils/counters';
-import { ArrowRight, Github, Linkedin, Mail, Phone, Download } from 'lucide-react';
+import { ArrowRight, Github, Linkedin, Mail, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const StatCounter: React.FC<{ label: string; value: number }> = ({ label, value }) => {

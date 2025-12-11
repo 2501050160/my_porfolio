@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 
 export const useCounter = (end: number, duration: number = 2000) => {
   const [count, setCount] = useState(0);
-  const elementRef = useRef<HTMLSpanElement>(null);
+  const elementRef = useRef<HTMLDivElement>(null);
   const hasAnimated = useRef(false);
 
   useEffect(() => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import siteData from '../data/siteData.json';
-import { Mail, Phone, MapPin, Send, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Loader2, CheckCircle } from 'lucide-react';
 import axios from 'axios';
 import { motion } from 'framer-motion';
 
