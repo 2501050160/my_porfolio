@@ -1,0 +1,173 @@
+{
+  "siteMeta": {
+    "title": "DASARI SAI PRAVEEN - IoT Developer | Full-Stack Engineer",
+    "description": "IoT Developer and Full-Stack Engineer with 63 IoT projects, 34 major implementations, and experience building real-time systems using React, Django and embedded systems.",
+    "author": "DASARI SAI PRAVEEN"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "firstName": "DASARI",
+    "lastName": "SAI PRAVEEN",
+    "roles": ["IoT Developer", "Full-Stack Engineer", "ASME Chairperson"],
+    "lead": "Innovative IoT Developer and Full-Stack Engineer building real-time systems and embedded solutions. Developed 63 IoT projects including 34 major implementations and 29 mini-projects.",
+    "location": "Visakhapatnam, Andhra Pradesh, India",
+    "availability": "Available for Opportunities",
+    "social": {
+      "github": "https://github.com/2501050160",
+      "linkedin": "https://linkedin.com/in/sai-praveen-dasari",
+      "email": "saipraveendasari51@gmail.com",
+      "phone": "+91 9494189664"
+    },
+    "cta": {
+      "projects": "/projects",
+      "contact": "/contact"
+    },
+    "stats": [
+      { "label": "IoT Projects", "value": 63 },
+      { "label": "Major Projects", "value": 34 },
+      { "label": "Projects Guided", "value": 53 }
+    ]
+  },
+  "about": {
+    "summary": "Innovative IoT Developer and Full-Stack Engineer with extensive experience in building real-time systems and embedded solutions. As Chairperson of ASME, guided 53 student projects. Expertise in React, Django, microcontroller programming, and real-time tracking systems.",
+    "skills": {
+      "iot": ["Arduino", "Raspberry Pi", "ESP32/8266", "GPS/GSM Modules", "Sensors", "MQTT", "WebSocket", "LoRaWAN", "PCB Design"],
+      "web": ["React.js", "JavaScript (ES6+)", "HTML5/CSS3", "Django", "Python", "REST APIs", "PostgreSQL", "MySQL", "Leaflet.js"],
+      "tools": ["Git", "GitHub", "Docker", "AutoCAD", "CATIA", "ANSYS", "Agile/Scrum", "AWS"]
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Technology in Mechanical Engineering",
+        "institution": "Vignan Institute of Information Technology, Visakhapatnam",
+        "period": "Sep 2022 – Apr 2025",
+        "grade": "CGPA: 7.82/10"
+      },
+      {
+        "degree": "Diploma in Mechanical Engineering",
+        "institution": "Government Polytechnic, Visakhapatnam",
+        "period": "Jun 2019 – Apr 2022",
+        "grade": "Percentage: 77%"
+      }
+    ],
+    "leadership": {
+      "role": "Chairperson - ASME Student Chapter",
+      "members": 150,
+      "projectsGuided": 53,
+      "workshopsOrganized": 15,
+      "achievements": [
+        "Led 150+ member student organization focused on technical innovation",
+        "Guided 53 student projects (29 major + 24 mini projects)",
+        "Organized 15+ technical workshops on IoT, embedded systems, and web development"
+      ]
+    },
+    "internship": {
+      "company": "IGIAT (Indo-German Institute of Advanced Technology)",
+      "period": "2019 (4 Months)",
+      "highlights": [
+        "Training in AutoCAD, CATIA, ANSYS",
+        "Completed 8 mechanical design projects",
+        "Performed FEA on automotive components"
+      ]
+    },
+    "counters": [
+      { "label": "Total IoT Projects", "value": 63 },
+      { "label": "Major IoT Projects", "value": 34 },
+      { "label": "Mini Projects", "value": 29 },
+      { "label": "Projects Guided", "value": 53 },
+      { "label": "Web Development", "value": 8 },
+      { "label": "Full-Stack Apps", "value": 2 }
+    ]
+  },
+  "projects": {
+    "stats": { "iotTotal": 63, "major": 34, "mini": 29, "webAndFullStack": 10 },
+    "keyProjects": [
+      {
+        "id": "p1",
+        "title": "Smart DriveMate - IoT Vehicle Tracking & Security System",
+        "short": "Real-time GPS tracking, geo-fencing, speed alerts, remote engine lock and theft prevention.",
+        "description": "Real-time GPS tracking with interactive map, geo-fencing with instant notifications, speed limit alerts, remote engine lock/unlock, motion-based theft detection, mobile & web dashboard.",
+        "technologies": ["React.js", "Django", "ESP32", "GPS NEO-6M", "GSM SIM800L", "MQTT", "WebSocket"],
+        "category": "iot",
+        "features": [
+          "Live location tracking on map", "Geo-fencing with alerts", "Remote engine control", "Motion detection & emergency alerts"
+        ],
+        "highlighted": true
+      },
+      {
+        "id": "p2",
+        "title": "Real-Time Attendance & Student Management System",
+        "short": "Facial recognition based attendance, analytics, role-based dashboard and automated notifications.",
+        "description": "Full-stack real-time attendance system with facial recognition, analytics dashboards, role-based access and SMS/email notifications.",
+        "technologies": ["React.js", "Django", "PostgreSQL", "Facial Recognition"],
+        "category": "fullstack",
+        "features": ["Facial recognition", "Real-time analytics", "Automated notifications"],
+        "highlighted": true
+      },
+      {
+        "id": "p3",
+        "title": "Transport Management System with Route Optimization",
+        "short": "Route optimization using Google Maps, live traffic integration and driver analytics.",
+        "description": "Dynamic route optimization with Google Maps API, live traffic data, driver performance analytics and fuel consumption tracking.",
+        "technologies": ["React.js", "Google Maps API", "Django", "Leaflet.js"],
+        "category": "fullstack",
+        "features": ["Route optimization", "Live traffic ETAs", "Driver analytics"],
+        "highlighted": true
+      }
+    ],
+    "categories": {
+      "major": [
+        "Smart Home Automation v4.0",
+        "Industrial Monitoring System",
+        "Precision Agriculture System",
+        "Smart City Solutions Suite",
+        "Healthcare Monitoring Devices",
+        "Environmental Monitoring Network"
+      ],
+      "mini": [
+        "Automated Lighting Control",
+        "Weather Station Network",
+        "Smart Irrigation Controllers",
+        "Home Security Modules",
+        "Energy Monitoring Systems"
+      ],
+      "web": [
+        "E-commerce Platform",
+        "Inventory Management System",
+        "Hospital Management Portal",
+        "Learning Management System",
+        "Social Media Dashboard"
+      ]
+    }
+  },
+  "certificates": {
+    "firstPrize": [
+      { "id": 1, "title": "Best Paper Award", "event": "Stepcone 2k25", "image": "/images/certificates/stepcone.jpg" },
+      { "id": 2, "title": "First Prize, Paper Presentation", "event": "ASTHRA 3.0", "image": "/images/certificates/asthra.jpg" }
+    ],
+    "secondPrize": [
+      { "id": 6, "title": "Second Prize, Paper Presentation", "event": "Synergy 2k25", "image": "/images/certificates/synergy.jpg" }
+    ],
+    "thirdPrize": [
+      { "id": 10, "title": "Third Prize, Poster Presentation", "event": "Saarang 2K25", "image": "/images/certificates/poster.jpg" }
+    ],
+    "professional": [
+      { "id": 13, "title": "Full-Stack Java Development", "image": "/images/certificates/java.jpg" },
+      { "id": 14, "title": "Advanced Python & Django", "image": "/images/certificates/python.jpg" },
+      { "id": 15, "title": "React Development Specialization", "image": "/images/certificates/react.jpg" }
+    ],
+    "notes": "Place certificate images in /public/images/certificates/. If images are missing, the site should show a placeholder SVG."
+  },
+  "contact": {
+    "email": "saipraveendasari51@gmail.com",
+    "phone": "+91 9494189664",
+    "location": "Visakhapatnam, Andhra Pradesh, India",
+    "apiEndpoint": "/api/contact/"
+  },
+  "footer": {
+    "copyrightName": "DASARI SAI PRAVEEN",
+    "links": {
+      "github": "https://github.com/2501050160",
+      "linkedin": "https://linkedin.com/in/sai-praveen-dasari"
+    }
+  }
+}
